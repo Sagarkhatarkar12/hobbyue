@@ -1,0 +1,1569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hobbycue.com</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo&family=Inter+Tight:wght@300&family=Montserrat&family=Open+Sans:wght@500&family=Poppins:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+ html{
+  scroll-behavior: smooth;
+ }
+    .navigation-bar {
+      height: 80px;
+      width: 100%;
+      /* background-color: red; */
+      box-shadow: 0px 1px 3px 0px gray;
+    }
+    .hobbies{
+      overflow: hidden;
+    }
+
+    footer{
+      overflow: hidden;
+    }
+    .navigation-bar{
+      overflow-x: scroll;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .unordered-list {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      /* background-color: yellow; */
+    }
+
+    .logo-img {
+      height: 60px;
+      width: 293.26px;
+    }
+
+    .list-item {
+      list-style: none;
+    }
+
+    .nav-link {
+      text-decoration: nones;
+    }
+
+    .logo-item {
+      margin-left: 97px;
+    }
+
+    .nav {
+      position: relative;
+    }
+
+    .input-text {
+      outline: none;
+      border: none;
+      border-radius: 8px 0px 0px 8px;
+      width: 86%;
+      height: 100%;
+      color: gray;
+      padding: 4px 20px;
+      font-family: sans-serif;
+      font-size: 12px;
+      font-weight: 530;
+    }
+
+    .search {
+      display: inline-block;
+      margin: 0px;
+      padding: 0px;
+      padding: 9px 12.67px;
+
+      border: 0px aliceblue;
+      border-radius: 0px 8px 8px 0px;
+      height: 100%;
+      background: rgba(128, 100, 162, 1);
+      color: white;
+      width: 14%;
+    }
+
+    .input-cont {
+      display: inline-block;
+      width: 300px;
+      height: 40px;
+      border-radius: 0px 8px 8px 0px;
+      border: 1px solid rgb(216, 215, 215);
+      border-radius: 8px 8px 8px 8px;
+      margin-left: 35px;
+      background-color: rgba(235, 237, 240, 1);
+    }
+
+    .input-cont:hover {
+      background-color: rgba(248, 249, 250, 1);
+    }
+
+    .ex {
+      display: inline-block;
+
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 107px;
+      margin-left: 90px;
+    }
+
+    .ex img {
+      margin-right: 7px;
+    }
+
+    .ex .ex-text {
+      margin-right: 6px;
+    }
+
+    .hobb {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: sans-serif;
+      margin-left: 40px;
+    }
+
+    .ex i {
+      color: gray;
+      font-size: 16px;
+      font-weight: 900;
+      /* font-style: ; */
+    }
+
+    .hobb .hobb-text {
+      margin: 0px 6px;
+    }
+
+    .list-icon {
+      margin-left: 30px;
+    }
+
+    .list-icon i {
+      color: rgba(128, 100, 162, 1);
+      font-size: 22px;
+    }
+
+    .sign-in {
+      height: 40px;
+      width: 112px;
+      font-size: 16px;
+      color: rgba(128, 100, 162, 1);
+      border: 1px solid rgba(128, 100, 162, 1);
+      border-radius: 8px;
+      background-color: transparent;
+      font-weight: 530;
+      margin-left: 30px;
+    }
+
+    .drop-down {
+      height: 220px;
+      width: 210px;
+      box-shadow: 0px 2px 10px 0px rgba(147, 156, 163, 0.12);
+      position: absolute;
+      right: 30vw;
+      top: 12.8vh;
+      display: none;
+    }
+
+    .dro {
+      list-style: none;
+      padding: 12px 61px 12px 12px;
+      background-color: white;
+      color: gray;
+      height: 43px;
+      font-family: sans-serif;
+      border-bottom: 1px solid gray;
+    }
+
+    .first-page {
+      min-height: 678px;
+      /* background-color: red; */
+    }
+
+    .container-main {
+      height: 83vh;
+      background-color: rgba(247, 245, 249, 1);
+
+      padding: 0px 100px;
+      /* padding-top: 20px; */
+      display: flex;
+    }
+
+    .cont-heading {
+      font-family: sans-serif;
+
+    }
+
+    .cont-heading .blue {
+      color: rgb(82, 192, 235);
+    }
+
+    .cont-heading .purple {
+      color: rgb(176, 68, 176);
+    }
+
+    .cont-heading {
+      font-style: italic;
+    }
+
+    .left-contain {
+      height: 100%;
+      width: 707px;
+
+      padding-top: 100px;
+      position: relative;
+
+
+    }
+
+    .cont-text {
+      width: 100%;
+      font-family: sans-serif;
+      font-size: 14px;
+      margin-top: 30px;
+      color: rgb(97, 92, 92);
+      line-height: 1.7;
+      word-spacing: 3px;
+      padding-right: 20px;
+    }
+
+    .cont-second {
+      font-family: sans-serif;
+      font-size: 14px;
+      padding-right: 20px;
+      width: 100%;
+      margin-top: 20px;
+      line-height: 1.7;
+      word-spacing: 3px;
+      color: rgb(82, 75, 75);
+
+    }
+
+    .right-contain {
+      margin-top: 100px;
+    }
+
+    .btn-cont {
+      display: flex;
+      font-family: sans-serif;
+      font-size: 18px;
+    }
+
+    ul li {
+      list-style: none;
+      margin-right: 30px;
+    }
+
+    ul a {
+      text-decoration: none;
+    }
+
+    .img-con {
+      position: absolute;
+      left: 0;
+      bottom: 0px;
+      width: 336.77px;
+      height: 216.02px;
+    }
+
+    .img-con img {
+      height: 100%;
+      width: 100%;
+    }
+main{
+  position: relative;
+}
+    .img-con-1 {
+      position: absolute;
+      left: 30vw;
+      bottom: 0px;
+      width: 336.77px;
+      height: 216.02px;
+      width: 345.76px;
+      height: 215.48px;
+
+
+
+    }
+
+    .img-con-1 img {
+      height: 100%;
+      width: 100%;
+    }
+    .hobbies{
+      position: relative;
+      height: 662px;
+      width: 100%;
+      padding: 40px 100px;
+      background-color: rgba(247, 253, 255, 1);
+    }
+    .h-oh{
+      color: rgba(128, 100, 162, 1);
+    }
+    .com{
+      color: rgba(0, 150, 200, 1);
+    }
+    .ho-heading{
+      font-size: 36px;
+      font-style: italic;
+      font-family: 'Heebo', sans-serif;
+font-family: 'Inter Tight', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+    }
+    .h-btn{
+      display: inline-block;
+      height: 46px;
+      font-family: 'Heebo', sans-serif;
+font-family: 'Inter Tight', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+width: 148px;
+background-color: rgba(128, 100, 162, 1);
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+font-size: 20px;
+font-weight: 600;
+line-height: 30px;
+border-radius: 8px;
+margin-top: 30px;
+    }
+    .pic{
+      width: 1240px;
+      height: 302px;
+
+    }
+    .p-pic{
+     position: absolute; 
+  width: 530.62px;
+  height: 100%;
+  bottom: 0px;
+  left: 50px;
+    }
+    .pic{
+      position: absolute;
+      bottom: 0px;
+      
+      ;
+    }
+    .p-pic-2{
+      position: absolute;
+      right: 200px;
+      bottom: 0px;
+    }
+    footer{
+      height: 380px;
+      width: 100%;
+      padding: 100px 100px;
+      background-color: rgba(255, 255, 255, 1);
+      display: flex;
+      justify-content: center;
+
+
+    }
+    .fo-heading{
+      font-size: 15px;
+      font-weight: 600;
+      font-family: sans-serif;
+
+    }
+    .icon-container{
+      display: flex;
+      /* flex-direction: column; */
+    }
+    .in-input{
+        width: 360px;
+height: 40px;
+ 
+border-radius: 8px 8px  8px  8px;
+border: 1px solid rgb(183, 180, 180);
+display: flex;
+        justify-content: center;
+        align-items: center;
+
+      }
+      
+      .input-in{
+        width: 85%;
+        border-radius: 8px;
+ 
+        height: 100%;
+        outline: none;
+        border: none;
+        padding:0px 20px;
+        letter-spacing: 1px;
+      
+      }
+      .list-item{
+        margin-right: 0px;
+      }
+      .invite{
+        display: inline-block;
+        height: 100%;
+        width: 15%;
+        padding: 10px 10px;
+        border-radius: 0px 8px 8px 0px;
+        background-color: rgba(128, 100, 162, 1);
+         font-family: sans-serif;
+color: rgba(255, 255, 255, 1);
+
+
+      }
+      .sm-pa{
+        font-family: sans-serif;
+        font-size: 15px;
+        margin-bottom: 5px;
+      }
+      .fo-heading{
+        margin-bottom: 20px;
+      }
+      .icon-container{
+        margin-bottom: 20px;
+      }
+      .sm-pa-icon{
+        height: 40px;
+        width: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     background-color: rgba(235, 237, 240, 1);
+        border-radius: 50%;
+        margin-right: 9px;
+        color: rgba(109, 116, 122, 1);
+      }
+      .hb{
+        margin-right: 100px;
+      }
+      .hw{
+        margin-right: 100px;
+      }
+      .ql{
+        margin-right: 100px;
+      }
+      .foo{
+        height: 78px;
+        width: 100%;
+        background-color: rgba(247, 245, 249, 1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: sans-serif;
+        font-weight: 500;
+      }
+      .google-sign-in {
+          width: 410px;
+          height: 40px;
+          border-radius: 8px;
+          border: 1px;
+          display: flex;
+          align-items: center;
+          border: 1px solid rgb(210, 206, 206);
+
+
+        }
+
+        .google-sign-in .g-icon {
+          display: inline-block;
+          height: 100%;
+          width: 60px;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+        }
+
+        .sign-in-con {
+          width: 100%;
+        }
+
+        .g-img {
+          height: 15px;
+          width: 15px;
+          display: inline-block;
+        }
+
+        .g-text {
+          /* text-align: center; */
+          padding: 0px 70px;
+          font-family: sans-serif;
+          font-weight: 500;
+          font-size: 14px;
+          letter-spacing: 0.5px;
+
+        }
+
+        .fb-sign-in {
+          width: 410px;
+
+          height: 40px;
+
+          border-radius: 8px;
+          border: 1px;
+
+          display: flex;
+          align-items: center;
+          border: 1px solid rgb(210, 206, 206);
+        }
+
+        .f-icon {
+          color: blue;
+          display: inline-block;
+          height: 100%;
+          width: 60px;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .line {
+          padding: 10px 0px;
+          display: flex;
+          margin-top: 10px;
+          align-items: center;
+
+        }
+
+        .f-text {
+          padding: 0px 70px;
+          font-family: sans-serif;
+          font-weight: 500;
+          font-size: 14px;
+          letter-spacing: 0.5px;
+          margin-left: 2px;
+        }
+
+        .sign-in-con {
+          padding-top: 30px;
+        }
+
+        .google-sign-in {
+          margin-bottom: 15px;
+        }
+
+        .f-hr {
+          width: 141px;
+          display: inline-block;
+        }
+
+        .f-hr hr {
+          width: 100%;
+          height: 1px;
+          background-color: gray;
+        }
+
+        .s-hr {
+          width: 141px;
+          justify-content: center;
+          align-content: center;
+          display: flex;
+
+        }
+
+        .s-hr hr {
+          display: inline-block;
+          width: 100%;
+          height: 1px;
+          width: 148px;
+          background-color: gray;
+        }
+
+        .l-contain {
+          color: black;
+          font-family: sans-serif;
+          margin: 0px 10px;
+        }
+
+        .right-contain {
+          padding-left: 100px;
+        }
+   
+    .input-tag {
+            width: 410px;
+            height: 40px;
+
+            border-radius: 8px;
+            border: 1px solid rgb(205, 205, 205);
+            /* gap: 10px */
+            background-color: white;
+
+
+          }
+
+          .input-tag .input-email {
+            outline: none;
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+            padding: 12px 340px 12px 12px;
+            border: none;
+            font-size: 15px;
+            font-family: sans-serif;
+            color: gray;
+          }
+
+          .eye-icon {
+            height: 39px;
+            width: 50px;
+            top: 0px;
+
+          }
+
+          .input-password {
+            width: 90%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            outline: none;
+            border-radius: 8px 0px 0px 8px;
+            padding: 0px 10px;
+            color: gray;
+          }
+
+          .eye-icon {
+            position: absolute;
+            right: 0;
+            display: inline-block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 0px 8px 8px 0px;
+            color: gray;
+          }
+
+          .in-pass {
+            position: relative;
+            margin-top: 15px;
+          }
+
+          .rem {
+            display: flex;
+            /* justify-content: space-between; */
+            width: 410px;
+            padding-left: 10px;
+            margin-top: 20px;
+
+
+          }
+
+          .rm {
+            font-family: sans-serif;
+
+          }
+
+          .fp {
+            font-family: sans-serif;
+            margin-left: 50px;
+          }
+
+          .box {}
+
+          .box-4 i {
+            color: gray;
+            margin-right: 10px;
+          }
+
+          .continue {
+            width: 410px;
+            height: 40px;
+            font-family: sans-serif;
+            font-size: 17px;
+            font-weight: 510;
+            background-color: white;
+            border: none;
+            border: 1px solid black;
+            border-radius: 8px;
+            margin-top: 20px;
+          }
+
+          .people {
+            width: 100%;
+
+            height: 818px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            padding: 158px;
+
+
+
+          }
+          .box {
+        padding: 40px;
+        width: 608px;
+        height: 297px;
+
+        border-radius: 8px;
+        border: 1px solid rgb(204, 204, 204);
+        letter-spacing: 1px;
+        box-shadow: 0px 0px 5px 0px rgb(232, 232, 232);
+
+
+      }
+
+      .p-heading {
+        display: flex;
+        align-items: center;
+      }
+
+      .p-icon {
+        margin-right: 20px;
+      }
+
+      .h-heading {
+        font-family: sans-serif;
+        font-size: 22px;
+        font-weight: 510;
+      }
+
+      .pe-para {
+        font-family: sans-serif;
+        font-size: 17px;
+        line-height: 1.4;
+        margin-top: 15px;
+        color: rgb(70, 61, 61);
+      }
+
+      .con {
+        display: inline-block;
+        width: 122px;
+        height: 40px;
+        color: purple;
+        /* padding: 12px 31px 12px 30px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        margin-top: 34px;
+        font-family: sans-serif;
+        border: 1px solid black;
+        /* gap: 10px */
+
+      }
+
+      .box-2 {
+        margin-left: 20px;
+        box-shadow: 0px 0px 5px 0px rgb(232, 232, 232);
+      }
+
+      .people-1 {
+        display: flex;
+      }
+
+      .people-2 {
+        display: flex;
+        margin-top: 30px;
+      }
+
+      .pr:hover {
+        background-color: rgba(128, 100, 162, 1);
+        color: white;
+      }
+
+      .gr:hover {
+        background-color: rgba(119, 147, 60, 1);
+        color: white;
+      }
+
+      .dr:hover {
+        background-color: rgba(192, 80, 77, 1);
+        color: white;
+      }
+
+      .bl :hover {
+        background-color: rgba(0, 150, 200, 1);
+        color: white;
+      }
+      .add-sec {
+        width: 100%;
+        padding: 100px;
+        height: 480px;
+        /* background-attachment: er/; */
+        background-color: rgba(247, 253, 255, 1);
+
+      }
+
+      .add-i {
+        width: 100%;
+        box-shadow: 0px 0px 5px 0px rgb(99, 99, 99);
+        border: none;
+      }
+
+      .p-m {
+        /* font-size: 20px; */
+        display: inline-block;
+        height: 30px;
+        width: 30px;
+        color: rgba(0, 150, 200, 1);
+        background-color: rgba(0, 150, 200, 1);
+        color: white;
+        border-radius: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 17px;
+        font-weight: 600;
+      }
+
+      .Testimi {
+        padding: 0px 100px;
+        height: 672px;
+        width: 100%;
+
+      }
+
+      .test {
+        position: relative;
+        height: 472px;
+
+        padding: 40px;
+        background-color: rgba(247, 245, 249, 1);
+      }
+      .test-heading {
+      height: 50px;
+      /* width: 50px; */
+      color: white;
+      display: flex;
+      align-items: center;
+    }
+
+    .t-icon {
+      height: 50px;
+      width: 50px;
+      background-color: purple;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+    }
+
+    .t-text {
+      color: black;
+      font-size: 25px;
+      font-family: sans-serif;
+      margin-left: 20px;
+      color: rgb(113, 107, 107);
+      font-weight: 530;
+    }
+
+    .t-para {
+      font-family: sans-serif;
+      font-size: 18px;
+      line-height: 1.5;
+      margin-top: 40px;
+      letter-spacing: 1px;
+      color: rgb(78, 71, 71);
+    }
+
+    .audio {
+      position: relative;
+
+      height: 100px;
+      width: 776px;
+      padding: 30px 20px;
+      background-color: rgba(204, 193, 218, 1);
+      display: flex;
+      align-items: center;
+      margin-top: 30px;
+      border-radius: 8px;
+
+    }
+
+    .ts-icon {
+      font-size: 30px;
+      color: white;
+    }
+
+    .t-test {
+      width: 468px;
+      height: 2px;
+      background-color: white;
+      color: white;
+      margin-left: 30px;
+    }
+
+    .circle {
+      position: absolute;
+      top: 41px;
+      left: 70px;
+      color: rgba(128, 100, 162, 1);
+    }
+
+    .num {
+      font-family: sans-serif;
+      font-size: 12px;
+      color: rgb(78, 69, 69);
+      margin-left: 10px;
+    }
+
+    .profile {
+      position: absolute;
+      right: 40px;
+    }
+
+    .mic {
+      position: absolute;
+      right: 90px;
+      bottom: 20px;
+    }
+
+    .subh {
+      position: absolute;
+      right: 100px;
+      bottom: 50px;
+      display: flex;
+      align-items: center;
+
+    }
+
+    .s-cnt {
+      margin-left: 10px;
+    }
+
+    .s-heading {
+      color: rgba(128, 100, 162, 1);
+      font-family: sans-serif;
+      font-weight: 530;
+    }
+
+    .s-para {
+      font-family: sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      color: rgba(0, 150, 200, 1);
+      margin-top: 5px;
+      display: inline-block;
+    }
+    .bar-icon{
+      position: absolute;
+      font-size: 25px;
+      right: 10px;
+      display: none;
+      
+    }
+    @media screen and (max-width:500px) {
+    
+       .bar-icon{
+        display: block;
+       }
+     
+      .with-c {
+        display: none;
+      }
+
+      .input-cont {
+        display: none;
+      }
+      .hidde{
+        display: none;
+        /* color: darkblue; */
+      }
+.container-main{
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  padding: 0px 10px;
+  overflow: scroll;
+  justify-content: baseline;
+  align-items: baseline;
+  width: 100vw;
+  position: relative;
+
+  text-wrap: wrap;
+}
+.navigation-bar{
+  overflow-x: scroll;
+}
+.left-contain{
+  width: 100%;
+}
+.right-contain{
+  width: 100%;
+  padding-left: px;
+  padding: 0px 10px;
+  margin-top: 10px;
+}
+.first-page{
+  height: 100%;
+  width: 100%;
+}
+body{
+  overflow: scroll;
+}
+
+.google-sign-in{
+  width: 100%;
+
+}
+.fb-sign-in{
+  width: 100%;
+}
+.img-con{
+  display: none;
+}
+.img-con-1{
+  display: none;
+}
+.ww{
+  width: 100%;
+}
+.people{
+  height: auto;
+  width: 100%;
+  padding: 0PX;
+  margin-top: 79px;
+}
+.people-1{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+}
+.add-sec{
+  padding: 7px;
+}
+.box-2{
+  height: auto;
+  margin-left: 0px;
+ 
+
+}
+.people-2{
+  display: flex;
+  flex-direction: column;
+}
+.Testimi{
+  padding: 20px 0px;
+ 
+  min-height: 100vh;
+  height: auto;
+  overflow: scroll;
+
+
+}
+.audio{
+  width: 100%;
+  margin-top: 20px;
+}
+.t-test{
+  width: 130px;
+  height: 2px;
+}
+.add-i{
+  height: auto;
+}
+.box{
+  height: auto;
+}
+.subh{
+  right: 152px;
+  bottom: -233px;
+}
+footer{
+  /* min-height: 100vh; */
+  height: auto;
+  padding-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.in-input{
+  width: 100%;
+}
+.sm-pa{
+  margin-bottom: 20px;
+}
+.p-pic-2{
+  height: 150px;
+  width: 170px;
+  position: absolute;
+  /* right: 10px; */
+  right: 10px;
+
+
+}
+.pic{
+  width: 100%;
+}
+.hobbies{
+  /* right: 152px; */
+  /* bottom: -233px; */
+  padding: 0px 10px;
+  height: 40vh;
+  overflow-x: hidden;
+}
+.p-pic{
+  height: 150px;
+  width: 200px;
+  position: absolute;
+  left: 10px;
+  height: 130px;
+    width: 122px;
+
+}
+.p-pic img{
+  width: 100%;
+  height: 100%;
+}
+.p-pic-2 img{
+  height: 100%;
+  width: 100%;
+
+}
+.footer{
+  padding: 30px 20px;
+  min-height: 124vh;
+}
+.hobbies{
+  padding: 20px;
+  overflow: scroll;
+  min-height: 55vh;
+}
+.subh{
+  display: none;
+}
+main{
+/* min-height: 200vh; */
+height: 100vh;
+ 
+  padding: 20px;
+}
+.people{
+  padding: 10px 10px;
+}
+.box{
+  margin-top: 20px;
+}
+.box-2{
+  /* margin-top:30px; */
+  /* margin: 20px 0px; */
+  margin-top: 20px;
+  /*  */
+}
+.add-item{ 
+  height: auto;
+  height: 40vh;
+ 
+  padding: 30px 0px;
+}
+
+.add-sec{
+  margin-top: 34px;
+}
+.container-main{
+  height: auto;
+}
+.logo-item {
+  
+  margin-left: 12px;
+}
+.logo-img{
+  height: 30px;
+  width: auto;
+}
+
+.img-con-1{
+  display: block;
+  height: 100px;
+width: auto;
+right: 0;
+}
+.img-con{
+  height: 100px;
+  width: auto;
+  left: 0px;
+}
+.container-main{
+  height: 100vh;
+}
+.left-contain{
+  height: 40vh;
+}
+.right-contain{
+  height: 30vh;
+}
+.container-main {
+    flex-direction: column;
+    height: 98vh;
+  }
+.img-con-1 img{
+  height: 100%;
+  width: 100%;
+}
+
+.img-con{
+  display: block;
+}
+
+
+    }
+    @media screen and (max-width:1170px){
+  .container-main{
+    flex-direction: column;
+       height:100vh;
+  }
+  .left-contain{
+    height: auto;
+    width: 100%;
+    padding: 20px 0px;
+  }
+  .right-contain{
+    height: auto;
+   margin-left: 0px;
+   margin-top: 0px;
+    width: 100%;
+    /* margin-left: 20px; */
+    padding-left: 0px;
+  }
+  .img-con-1{
+    right: 0px;
+  }
+  .navigation-bar{
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .auto{
+   height: auto;
+  }
+  .people{
+    height: auto;
+    padding: 40px 20px;
+  }
+  .Testimi{
+    padding: 0px 0px;
+  }
+  .audio{
+    width: 100%;
+  }
+  .t-test{
+    width: 40vw;
+  }
+  .footer{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 20px 30px;
+  }
+  .sm-pa{
+    letter-spacing: 1.4px;
+  }
+  .subh{
+    display: none;
+  }
+    }
+     @media screen and (max-width:600px){
+            .p-pic{
+              height: 150px;
+              width: auto;
+              left: 0px;
+              position: absolute;
+            }
+            .p-pic img{
+              width: 100%;
+              height: 100%;
+            }
+            .p-pic-2{
+              height: 150px;
+              width: auto;
+              position: absolute;
+              right: 0px
+            }
+            .p-pic-2 img{
+              width: 100%;
+              height: 100%;
+            }
+            .hobbies{
+              overflow: hidden;
+              height: 40vh;
+              padding: 0px 10px;
+            }
+     }
+  </style>
+</head>
+
+<body>
+  <div class="first-page">
+    <header class="header">
+      <nav class="navigation-bar">
+        <ul class="unordered-list">
+        <li class="bar-icon"><i class="bi bi-list"></i></li>
+          <li class="list-item logo-item">
+            <a href="" class="nav-link"><img class="logo-img" src="HobbyCue Logo.png" alt="" /></a>
+          </li>
+          <li class="list-item">
+            <span class="input-cont"><input placeholder="Search here..." type="text" aria-label="Input"
+                class="input-text  " /><span class="search"><i class="bi bi-search"></i></span></span>
+          </li>
+          <li class="list-item with-c ">
+            <span class="ex"><img src="Vector (2).png" alt="" /><span class="ex-text">Explore</span><i
+                class="bi bi-chevron-down"></i></span>
+          </li>
+          <li class="list-item with-c">
+            <span class="hobb"><img src="Hobbies.png" alt="" /><span class="hobb-text">Hobbies</span><i
+                class="bi bi-chevron-down"></i></span>
+          </li>
+          <li class="list-item with-c list-icon">
+            <span class="icon"><i class="bi bi-bookmark-fill"></i></span>
+          </li>
+          <li class="list-item list-icon with-c">
+            <span class="icon"><i class="bi bi-bell-fill"></i></span>
+          </li>
+          <li class="list-item list-icon with-c">
+            <span class="icon"><i class="bi bi-cart-fill"></i></span>
+          </li>
+          <li class="list-item list-btn with-c">
+            <button class="sign-in">Sign-in</button>
+          </li>
+        </ul>
+      </nav>
+      <style></style>
+      <div class="drop-down">
+        <li class="dro">People-Community</li>
+        <li class="dro">Place-Venues</li>
+        <li class="dro">Program-Events</li>
+        <li class="dro">Products-Store</li>
+        <li class="dro">Blog</li>
+      </div>
+    </header>
+    <main class="container-main">
+      <div class="left-contain">
+        <h2 class="cont-heading">Explore your <span class="blue">hobby </span> or <span class="purple">passion</span>
+        </h2>
+        <p class="cont-text">Sign-in to interact with a community of fellow hobbyists and an eco-system of experts,
+          teachers, suppliers, classes, workshops, and places to practice, participate or perform. <span class="hidde"> Your hobby may be
+          about visual or performing arts, sports, games, gardening, model making, cooking, indoor or outdoor
+          activities…
+        <p class="cont-second">If you are an expert or a seller, you can Add your Listing and promote yourself, your
+          students, products, services or events. Hop on your hobbyhorse and enjoy the ride.</p>
+        </p>
+      </span>
+      
+      </div>
+      
+      <div class="right-contain">
+        <ul class="btn-cont ww ">
+          <li class="list-btn"><a href="" class="link-btn">Sign-In</a></li>
+          <li class="list-btn"><a href="" class="link-btn">Join-In</a></li>
+        </ul>
+        <div class="sign-in-con ww">
+          <div class="google-sign-in ww"> <span class="g-icon"><img src="_x31__stroke.png" alt=""
+                class="g-img"></span><span class="g-text">Continue with Google</span></div>
+          <div class="fb-sign-in ww"> <span class="f-icon"><i class="bi bi-facebook"></i></span><span
+              class="f-text">Continue with Facebook</span></div>
+
+        </div>
+        <div class="line ww">
+          <span class="f-hr">
+            <hr>
+          </span><span class="l-contain"> or connect with</span><span class="s-hr">
+            <hr>
+          </span>
+        </div>
+         
+        <form action="">
+          <div class="input-tag ww"><input aria-label="input" placeholder="Email" class="input-email" type="text"></div>
+          <div class="input-tag in-pass ww"><input aria-label="input" placeholder="Password" class="input-password"
+              type="text"><span class="eye-icon"><i class="bi bi-eye-slash-fill"></i></span></div>
+          <ul class="rem ww">
+            <li class="rm"><span class="box-4"><i class="bi bi-square"></i></span>Remember Me</li>
+            <li class="fp"><span class="box-4"><i class="bi bi-lock-fill"></i></span>Forgot Password?</li>
+          </ul>
+          <button class="continue ww">Continue</button>
+        </form>
+      </div>
+      <div class="img-con">
+        <img src="5793404 1.png" alt="">
+      </div>
+      <div class="img-con-1">
+        <img src="OBJECTS.png" alt="">
+      </div>
+    </main>
+    <style>
+    </style>
+    <section class="people ww">
+      <div class="people-1">
+        <div class="box pr ww auto">
+          <span class="p-heading">
+            <span class="p-icon"><img src="groups_black_24dp (1) 1.png" alt=""></span><span
+              class="h-heading">People</span>
+          </span>
+          <p class="pe-para">Find a teacher, coach, or expert for your hobby interest in your locality. Find a partner,
+            teammate, accompanist or collaborator.</p>
+          <span class="con">Connect</span>
+        </div>
+        <div class="box box-2 gr ww auto">
+          <span class="p-heading">
+            <span class="p-icon"><img src="location_on_black_24dp 1.png" alt=""></span><span
+              class="h-heading">Place</span>
+          </span>
+          <p class="pe-para">Find a class, school, playground, auditorium, studio, shop or an event venue. Book a slot
+            at venues that allow booking through hobbycue.</p>
+          <span class="con">Meet Up</span>
+        </div>
+      </div>
+      <div class="people-2">
+        <div class="box dr ww auto" >
+          <span class="p-heading ">
+            <span class="p-icon"><img src="shopping_basket_black_24dp (2) 1.png" alt=""></span><span
+              class="h-heading">Product</span>
+          </span>
+          <p class="pe-para">Find equipment or supplies required for your hobby. Buy, rent or borrow from shops, online
+            stores or from community members.</p>
+          <span class="con">Get it</span>
+        </div>
+        <div class="box box-2 bl ww auto">
+          <span class="p-heading">
+            <span class="p-icon"><img src="event_available_black_24dp 2.png" alt=""></span><span
+              class="h-heading">Program</span>
+          </span>
+          <p class="pe-para">Find events, meetups and workshops related to your hobby. Register or buy tickets online.
+          </p>
+          <span class="con">Attend</span>
+        </div>
+      </div>
+
+    </section>
+    <style>
+    
+    </style>
+    <section class="add-sec">
+      <div class="add-item">
+        <div class="box box-2 add-i auto">
+          <span class="p-heading">
+            <span class="p-icon p-m"><i class="bi bi-plus-lg"></i></span><span class="h-heading">Add your own</span>
+          </span>
+          <p class="pe-para">Are you a teacher or expert? Do you sell or rent out equipment, venue or event tickets? Or,
+            you know someone who should be on hobbycue? Go ahead and Add your Own page</p>
+          <span class="con">Add new</span>
+        </div>
+      </div>
+  </div>
+  </section>
+  <style>
+   
+
+  </style>
+  <section class="Testimi">
+    <div class="test">
+      <div class="test-heading">
+        <span class="t-icon"><i class="bi bi-quote"></i></span> <span class="t-text">Testimonials</span>
+      </div>
+      <p class="t-para">In a fast growing and ever changing city like Bangalore, it sometimes becomes very difficult to
+        find or connect with like minded people. Websites like hobbycue.com is a great service which helps me get in
+        touch with, communicate, connect, and exchange ideas with other dancers. It also provides the extra benefit of
+        finding products and services that I can avail, which I can be assured is going to be of great quality as it
+        comes recommended by people of the hobbycue community. To have discussions, to get visibility, and to be able to
+        safely explore various hobbies and activities in my city, all under one roof, is an excellent idea and I highly
+        recommend it.</p>
+      <div class="audio">
+        <span class="ts-icon"><i class="bi bi-play-circle-fill"></i></span><span class="t-hr">
+          <hr class="t-test">
+        </span> <span class="circle"><i class="bi bi-circle-fill"></i></span><span class="num">0.00</span><span
+          class="profile"><img src="Ellipse 26.png" alt=""></span><span class="mic"><img src="Vector (4).png"
+            alt=""></span>
+      </div>
+      <div class="subh">
+        <span class="s-img"><img src="Ellipse 26.png" alt=""></span><span class="s-cnt"><span class="s-heading">Shubha
+            Nagarajan</span><br><span class="s-para">Classical Dancer</span></span>
+      </div>
+    </div>
+    
+    
+  </section>
+  <style>
+  
+  </style>
+  <section class="hobbies">
+<h3 class="ho-heading">Your <span class="h-oh">Hobby</span>, Your <span class="com">Community...</span> </h3>
+<span class="h-btn">Get started</span>
+<div class="pic">
+  <div class="p-pic">
+<img src="Group.png" alt="">
+</div>
+</div>
+<div class="p-pic-2">
+<img src="5820000 1.png" alt="">
+</div>
+  </section>
+
+
+  </div>
+  <footer class="footer">
+    <ul class="hb">
+      <li class="fo-heading">Hobbycue</li>
+      <li class="sm-pa">About Us</li>
+      <li class="sm-pa">Our Services</li>
+      <li class="sm-pa">Work with Us</li>
+      <li class="sm-pa">FAQ</li>
+      <li class="sm-pa">Contact Us</li>
+    </ul>
+    <ul class="hw">
+      <li class="fo-heading">How Do I</li>
+      <li class="sm-pa">Sign Up</li>
+      <li class="sm-pa">Add a Listing</li>
+      <li class="sm-pa">Claim Listing</li>
+      <li class="sm-pa">Post a Query</li>
+      <li class="sm-pa">Add a Blog Post</li>
+      <li class="sm-pa">Other Queries</li>
+    </ul>
+    <ul class="ql">
+      <li class="fo-heading">Quick Links</li>
+      <li class="sm-pa">Listings</li>
+      <li class="sm-pa">Blog Posts</li>
+      <li class="sm-pa">Shop / Store</li>
+      <li class="sm-pa">Community</li>
+      
+    </ul>
+    <ul class="social">
+      <li class="fo-heading">Social Media</li>
+      <div class="icon-container">
+     
+      <li class="sm-pa-icon"><i class="bi bi-facebook"></i></li>
+      <li class="sm-pa-icon"><i class="bi bi-twitter"></i></li>
+      <li class="sm-pa-icon"><i class="bi bi-instagram"></i></li>
+      <li class="sm-pa-icon"><i class="bi bi-pinterest"></i></li>
+      <li class="sm-pa-icon"><i class="bi bi-google"></i></li>
+      <li class="sm-pa-icon"><i class="bi bi-youtube"></i></li>
+      <li class="sm-pa-icon"><i class="bi bi-telegram"></i></li>
+      <li class="sm-pa-icon"><i class="bi bi-envelope"></i></li>
+   
+    </div>
+     
+    <h4 class="fo-heading">Invite Friends</h4>
+    <div class="in-input">
+      <input aria-label="input" class="input-in" placeholder="Email" type="text"><span class="invite">Invite</span>
+    </div>
+  </ul>
+    
+  </footer>
+  <div class="foo"><p>&copy; Purple Cues Private Limited</p></div>
+  </div>
+</body>
+
+</html>
